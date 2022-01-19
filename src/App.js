@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from './Components/Header/Header';
 import Homepage from './Components/Homepage/Homepage';
 import NotFound from './Components/NotFound/NotFound';
@@ -11,13 +11,13 @@ function App() {
       <div>
         <Header />
 
-        <Switch>
+        <Routes>
 
-          <Route exact path="/"> <Homepage /></Route>
-          <Route exact path="/game"> <Game /></Route>
-          <Route exact path="*"> <NotFound /></Route>
+          <Route exact path="/" element={<Homepage />}></Route>
+          <Route exact path="/game" element={<Game />}></Route>
+          <Route exact path="*" element={<NotFound />}></Route>
 
-        </Switch>
+        </Routes>
 
       </div>
     </Router>

@@ -1,13 +1,118 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+  /* ===== index CSS ===== */
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+  body {
+    margin: 0;
+    font-family: monospace, -apple-system;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #07041f;
+    cursor: default;
+  }
+
+  a {
+    color: rgb(255, 99, 52);
+  }
+
+  a:hover {
+    color: rgb(255, 210, 9);
+  }
+
+  h1 {
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #ffffff;
+    font-weight: normal;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+
+  h3 {
+    color: white;
+  }
+
+  h4 {
+    color: white;
+  }
+
+  button {
+    font-family: monospace;
+    height: 40px;
+    background-color: #3f36b900;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    padding: 0px;
+    font-size: 28px;
+    color: rgb(255, 99, 52);
+    text-decoration: underline;
+    letter-spacing: 2px;
+  }
+
+  button:hover {
+    color: rgb(255, 210, 9);
+  }
+
+  button:disabled {
+    color: rgba(255, 99, 52, 0);
+  }
+
+  button:disabled:hover {
+    color: rgba(255, 99, 52, 0);
+    cursor: default;
+  }
+
+  ul>li {
+    color: #fff;
+    margin: 20px 0px;
+  }
+
+  p {
+    color: #fff;
+  }
+
+  .container {
+    display: block;
+    width: 820px;
+    position: absolute;
+    left: 40%;
+    top: 30%;
+  }
+
+  ::-moz-selection {
+    /* Code for Firefox */
+    background: #d33464;
+  }
+
+  ::selection {
+    background: #d33464;
+  }
+
+  /* ===== Scrollbar CSS ===== */
+
+  /* Firefox */
+
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 99, 52);
+  }
+
+  /* Chrome, Edge, and Safari */
+
+  *::-webkit-scrollbar {
+    width: 11px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #ffffff00;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 99, 52);
+    border-radius: 11px;
+    border: 0
+  }

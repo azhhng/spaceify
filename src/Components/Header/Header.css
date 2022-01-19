@@ -1,0 +1,26 @@
+  /* ===== Header CSS ===== */
+
+  .header-container {
+    width: 500px;
+    position: fixed;
+    left: 10%;
+    top: 30%;
+  }
+
+  .header-container>h1 {
+    width: 80px;
+  }
+
+  .header-container>h1:hover {
+    cursor: pointer;
+  }
+
+  .header-container>h2 {
+    width: 360px;
+  }
+
+  #game-button {
+    position: fixed;
+    top: 50%;
+    font-size: 20px;
+  }

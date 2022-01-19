@@ -4,7 +4,7 @@
       display: block;
       width: 900px;
       position: absolute;
-      left: 40%;
+      left: 35%;
   }
 
   .game-container>.instruction-container {
@@ -21,6 +21,10 @@
       top: 55%;
       left: 10%;
       width: 500px;
+  }
+
+  .game-container>.name-container>h2 {
+      width: 400px;
   }
 
   .game-container>.results-container {
